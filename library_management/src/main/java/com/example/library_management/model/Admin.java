@@ -145,5 +145,4 @@ public class Admin {
 				+ ", rental_cost=" + rental_cost + "]";
 	}
 	
-
 }

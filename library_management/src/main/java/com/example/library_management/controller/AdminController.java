@@ -2,9 +2,7 @@ package com.example.library_management.controller;
 
 import java.util.List;
 
-import org.apache.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,9 +15,12 @@ import com.example.library_management.service.AdminService;
 
 @RestController
 @RequestMapping("/admin")
+
 public class AdminController {
+	
 	@Autowired
 	AdminService service;
+	
 	@GetMapping("/try")
 	public String ty()
 	{
@@ -42,9 +43,6 @@ public class AdminController {
 	{
 		return service.deletemovie(a);
 	}
-	
-	
-	
 	
 
 }

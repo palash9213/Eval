@@ -7,13 +7,11 @@ import org.springframework.stereotype.Service;
 
 import com.example.library_management.model.Admin;
 import com.example.library_management.repo.AdminRepo;
-
-import net.bytebuddy.dynamic.DynamicType.Builder.MethodDefinition.ImplementationDefinition.Optional;
 @Service
 public class AdminServiceImpl implements AdminService {
-@Autowired
-AdminRepo repo;
-	
+
+	@Autowired
+	AdminRepo repo;
 	
 
 	@Override
