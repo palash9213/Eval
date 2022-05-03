@@ -17,9 +17,11 @@ import com.example.customer.customer.service.CustomerService;
 @RestController
 @RequestMapping("/customer")
 public class Controller {
+	
 	@Autowired
 	CustomerService service;
-	@GetMapping
+	
+	@GetMapping("/all")
 	public List<Customer> showAll(){
 		return service.allcustomer();
 		
@@ -35,10 +37,4 @@ public class Controller {
 		service.deletecustomer(id);
 		return"customer deleted";
 	}
-//	@GetMapping("/modifyMovie/{id}")
-//	public String modMovie(@PathVariable("id")int id)
-//	{
-//	service.searchMovie(id);
-//	return "Movie Modified";
-//	}
 }

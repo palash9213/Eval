@@ -3,13 +3,13 @@ package com.example.customer.customer.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.example.customer.customer.model.Customer;
 import com.example.customer.customer.repo.CustomerRepo;
 
-import net.bytebuddy.dynamic.DynamicType.Builder.MethodDefinition.ImplementationDefinition.Optional;
-
+@Service
 public class CustomerServiceImpl implements CustomerService {
 	@Autowired
 	CustomerRepo repo;
